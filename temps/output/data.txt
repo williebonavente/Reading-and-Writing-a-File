@@ -1,0 +1,6 @@
+The for loop that follows manipulates not the standard I/O streams but rather 
+the input and output files accessed through the file pointers in inp and outp . 
+Function getc is called repeatedly to take one character at a time from the 
+input file, and putc echoes these characters to the output file. When the copy is 
+complete, the calls to fclose release the two files after writing an <eof> on the 
+output file. 

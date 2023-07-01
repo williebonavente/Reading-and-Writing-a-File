@@ -113,3 +113,32 @@ Local Variables for `get_params`
 
 `search_params_t params;` `// structure whose components must be defined
 ``char choice;` `// user's response to menu`
+
+### Algorithm for `get_params`
+
+1. Initialize `params` to permit widest possible search.
+2. Display menu and get response to store in choice.
+3. Repeat while choice is not `q`
+   - 3.1 Select appropriate prompt and get new parameter value.
+   - 3.2 Display menu and get response to shore `choice`.
+4. Return search parameters.
+
+Function `display_match` must examine each file with record with a stock number
+between the low and high bounds for stock numbers. If a record satisfies the search
+parameters, it is displayed. Function `display_match` will also print a message if no matches are found.
+
+Local Variables for display_match
+`product_t next prod` `// the current product`
+`int no_matches` `// a flag indicating whether or not there  are any matches`
+
+### Algorithms for `display_match`
+
+1. Initialize `no_matches` to true(1)
+2. Advance to the first record whose stock number is within range.
+3. while the current stock number is still range repeat
+
+   - 3.1 if the search parameters match
+     - 3.1.1 Display the product and set `no_matches` to false(0).
+   - 3.2 Get the next product record.
+4. if there are no matches
+   - 4.1 Print a `no products available` message.

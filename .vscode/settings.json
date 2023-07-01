@@ -1,4 +1,7 @@
 {
     "zowe.settings.version": 2,
-    "svg.preview.background": "custom"
+    "svg.preview.background": "custom",
+    "cSpell.words": [
+        "nonwhitespace"
+    ]
 }

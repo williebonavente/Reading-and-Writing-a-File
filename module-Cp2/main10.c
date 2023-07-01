@@ -15,7 +15,7 @@ int main(void)
 
     system("cls");
 
-    if ((fp = fopen("friends.dat", "rt")) == NULL)
+    if ((fp = fopen("friends.bin", "rb")) == NULL)
     {
         printf("Error opening the file.");
         return 1;
@@ -25,6 +25,7 @@ int main(void)
     {
         printf("%s %d %.2f\n", f.name, f.age, f.wage);
     }
+
 
     fclose(fp);
 

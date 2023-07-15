@@ -1,0 +1,2 @@
+	Name                     	Midterm   	Final Grade 	Ave.grade
+	willie                   	1.50      	1.20        	1.35     
